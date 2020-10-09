@@ -1,0 +1,44 @@
+.issue{
+  display:flex;
+    flex-direction:row;
+    align-items: stretch;
+    cursor: pointer;
+    margin: 10px 0px;
+    padding: 4px;
+
+    &:hover{
+      background-color: whitesmoke;
+    }
+    // justify-content:center;
+    // align-items:top;
+
+    .issue-id{
+      padding:10px;
+      font-weight: bold;
+      font-size: 16px;
+      vertical-align: center;
+      margin-right:10px;
+      border-right: 1px solid #c5c5c5;
+    }
+
+    .assignee{
+      border: 1px dotted #b9b9b9;
+      padding: 3px 6px;
+      margin: 10px;
+      background-color: whitesmoke;
+      border-radius: 40px;
+      color:gray;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .issue-check{
+      height: 10px;
+      width: 10px;
+      background-color: yellow;
+
+      .active{
+        background-color: red;
+      }
+    }
+}

@@ -1,0 +1,17 @@
+<h1>Grooming</h1>
+
+<navbar></navbar>
+
+<div class="page-description">
+  Use this page to modify any issues before starting the sprint planning process. Click on one of the tickets below to view ticket details and modify them.
+</div>
+
+<div *ngIf="!selectedIssue">
+  <issues></issues>
+</div>
+
+
+
+<div *ngIf="selectedIssue">
+  <issue [(issue)]="selectedIssue" [users]="users"></issue>
+</div> 

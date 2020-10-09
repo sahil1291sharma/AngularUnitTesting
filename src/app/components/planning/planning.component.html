@@ -1,0 +1,19 @@
+<h1>Planning</h1>
+
+<navbar></navbar>
+
+<div class="page-description">
+	This is a list of all issues in the backlog. Click on the round checkbox on the right to add the issue to the
+	sprint. Click on it again to remove it from the sprint.
+</div>
+
+<div *ngFor="let issue of issues" class="issue">
+	<div>
+		<div class="issue-check" [ngClass]="{'active': issue.status=='sprint'}" (click)="toggleIssue(issue)"></div>
+	</div>
+	<div class="issue-info">
+		<div class="issue-id">#{{ issue.id }}</div>
+		<div class="assignee" [hidden]="!issue.assignee">{{ issue.assignee }}</div>
+		<div class="issue-description">{{ issue.userStory }}</div>
+	</div>
+</div>

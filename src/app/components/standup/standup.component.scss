@@ -1,0 +1,32 @@
+.standup-col {
+    padding: 10px 10px;
+  }
+
+  
+  .standup-issue {
+    margin: 10px 0px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+  }
+.scrum-board{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:top;
+
+  &> * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+
+    .swimlane{
+      
+      &.todo{
+        background-color: #dedddd;
+      }
+      &.progress{
+        background-color: #f1f1f1;
+      }
+    }
+}

@@ -1,0 +1,63 @@
+
+<h1>Standup</h1>
+
+
+
+<navbar></navbar>
+
+    <div class="page-description">
+      If there are no tickets have been added to the sprint. Go to "Planning" and mark the issues you want to add to this sprint.
+    </div>
+
+  <mat-list >
+    <div class="scrum-board">
+      <div  class="swimlane todo">
+        <h3 mat-subheader>
+          New
+        </h3>
+        <div class="standup-issue" *ngFor="let issue of issues" [hidden]="issue.status!='sprint' || issue.progress!='new'">
+          <div layout="row" layout-align="center center">
+
+            <div class="mat-list-item-text" layout="column">
+              <div class="issue-id">#{{ issue.id }}</div>
+              <div class="issue-assignee">{{ issue.assignee }}</div>
+              <p>{{ issue.userStory }}</p>
+              <button mat-flat-button (click)="setProgress(issue,'in progress')">start</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="swimlane progress">
+        <h3 mat-subheader>
+          In Progress
+        </h3>
+        <div class="standup-issue" *ngFor="let issue of issues" [hidden]="issue.status!='sprint' || issue.progress!='in progress'">
+          <div layout="row" layout-align="center center">
+
+            <div class="mat-list-item-text" layout="column">
+              <div class="issue-id">#{{ issue.id }}</div>
+              <div class="issue-assignee">{{ issue.assignee }}</div>
+              <p>{{ issue.userStory }}</p>
+              <button mat-flat-button (click)="setProgress(issue,'done')">complete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="swimlane done">
+        <h3 mat-subheader>
+          Done
+        </h3>
+        <div class="standup-issue" *ngFor="let issue of issues" [hidden]="issue.status!='sprint' || issue.progress!='done'">
+          <div layout="row" layout-align="center center">
+
+            <div class="mat-list-item-text" layout="column">
+              <div class="issue-id">#{{ issue.id }}</div>
+              <div class="issue-assignee">{{ issue.assignee }}</div>
+              <p>{{ issue.userStory }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-list>
+<!-- </mat-content> -->

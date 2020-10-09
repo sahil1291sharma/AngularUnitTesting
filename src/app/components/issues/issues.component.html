@@ -1,0 +1,9 @@
+
+    <div class="issue" *ngFor="let issue of issues" (click)="selectIssue(issue)">
+      
+        <div class="issue-id">{{ issue.id }}</div>
+        <div class="issue-description">{{ issue.userStory }}</div>
+        <div class="assignee" [hidden]="!issue.assignee">{{ issue.assignee }}</div>
+ 
+    </div>
+

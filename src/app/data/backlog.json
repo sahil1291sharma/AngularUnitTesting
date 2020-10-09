@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "assignee": null,
+    "userStory": "As a student I can watch the lecture after the class so that I can revisit important points that I missed in class.",
+    "priority": 100,
+    "sprint": 2,
+    "progress": "new",
+    "status": "backlog"
+  },
+  {
+    "id": 2,
+    "assignee": null,
+    "userStory": "As student I want to view the syllabus so that I can prepare for next classes topic.",
+    "priority": 90,
+    "sprint": 2,
+    "progress": "new",
+    "status": "backlog"
+  },
+  {
+    "id": 3,
+    "assignee": null,
+    "userStory": "As a student I can download lecture slides so that I can study the slides when I don't have an internet connection.",
+    "priority": 80,
+    "sprint": 2,
+    "progress": "new",
+    "status": "backlog"
+  },
+  {
+    "id": 4,
+    "assignee": null,
+    "userStory": "As an instructor I want to post announcements so that I can reliably disseminate important messages to the entire class.",
+    "priority": 70,
+    "sprint": 2,
+    "progress": "new",
+    "status": "backlog"
+  },
+  {
+    "id": 5,
+    "assignee": null,
+    "userStory": "As a student I want to use the view grades so that I can assess how hard I have to work for the remaining assignments.",
+    "priority": 60,
+    "sprint": 2,
+    "progress": "new",
+    "status": "backlog"
+  }
+]

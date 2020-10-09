@@ -1,0 +1,43 @@
+.issue{
+  display:flex;
+    flex-direction:row;
+    justify-content:left;
+    margin: 15px 0px;
+
+    .issue-info{
+      margin-left: 10px;
+      display:flex;
+      flex-direction:column;
+
+
+     .issue-id{
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+    .assignee{
+     
+      color:gray;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .issue-description{
+      padding: 0px;
+    }
+
+
+    }
+}
+    .issue-check{
+      height: 20px;
+      width: 20px;
+      margin: 10px;
+      border-radius: 99px;
+      border: 1px solid #cccccc;
+      cursor: pointer;
+
+      &.active{
+        background-color: #4288fc;
+      }
+    }
